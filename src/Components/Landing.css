@@ -1,0 +1,93 @@
+.Landingdiv {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(white, rgb(35, 110, 125));
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow-wrap: normal;
+    height: 80px;
+    background-color: rgba(6, 6, 6, 0.694);
+    border-bottom: 1px solid rgba(6, 6, 6, 0.203);
+    box-shadow: 00px 00px 08px 07px rgba(44, 42, 42, 0.836);
+}
+
+.Navbar {
+    position: relative;
+    list-style: none;
+}
+.carouseldiv{
+    justify-content: center;
+    
+}
+.logo {
+    font-weight: 400;
+    justify-self: flex-start;
+    position: relative;
+    font-size: 20px;
+    padding: 05px;
+    color: rgb(255, 255, 255);
+
+}
+
+.logo:hover {
+    font-weight: 400;
+    justify-self: flex-start;
+    position: relative;
+    font-size: 20px;
+    padding: 05px;
+    color: rgb(0, 0, 0);
+
+}
+
+.Navbar ul li {
+    display: inline-block;
+    padding: 05px 05px 05px 05px;
+    margin: 05px 05px 05px 05px;
+}
+
+.Navbar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.Navbar a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#containerid {
+    position: relative;
+    top: 20px;
+}
+
+#Content-col {
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.imgTom {
+    position: relative;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.imgTom img {
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    max-width: 420px;
+    top: 20px;
+}
+.imgTom img :hover{
+    width: 110vw;
+}
