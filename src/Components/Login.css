@@ -18,7 +18,7 @@
     width: 35vw;
     max-width: 350px;
     min-width: 220px;
-    height: 45vh;
+    min-height: 50vh;
     background-color: gray;
     border: 1px solid rgba(76, 179, 223, 0.822);
     position: relative;

@@ -5,7 +5,7 @@ export const Careers = () => {
     <div className="Landingdiv">
       <div className="header">
         <div className="logo">
-          <h1>Movie City</h1>
+          <h1>Cartoon City</h1>
         </div>
         <nav className="Navbar">
           <ul>
@@ -15,13 +15,13 @@ export const Careers = () => {
             </li>
             <li>
               {" "}
-              <a href="/About">About Us</a>{" "}
+              <a href="/About">More Cartoons</a>{" "}
             </li>
+
             <li>
               {" "}
               <a href="/Careers">Careers</a>{" "}
             </li>
-            
           </ul>
         </nav>
       </div>

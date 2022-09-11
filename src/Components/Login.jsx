@@ -43,6 +43,7 @@ export const Login = () => {
   };
 
   return (
+    <React.Fragment>
     <div className="main-div">
       <div className="child-div">
         <form autoComplete="off" onSubmit={handleLoginSubmit}>
@@ -101,5 +102,6 @@ export const Login = () => {
         </form>
       </div>
     </div>
+    </React.Fragment>
   );
 };

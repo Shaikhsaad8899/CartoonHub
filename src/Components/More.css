@@ -1,0 +1,31 @@
+.CardCartoon {
+    margin: 30px 0px 0px 0px;
+    border-radius: 50px !important;
+    border: 2px solid rgba(140, 140, 179, 0.651);
+    background-color: rgba(42, 38, 38, 0.255) !important;
+    box-shadow: 05px 05px 25px 05px black !important;
+}
+
+.aboutdiv {
+    background: radial-gradient(White, rgb(154, 128, 128), rgba(13, 40, 10, 0.989));
+}
+
+
+.Cardmediacss {
+    height: auto;
+    padding: 35px;
+    background-size: cover;
+}
+
+.Cardactions Button {
+    color: black !important;
+
+}
+
+.about-column {
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    /* left: 0%; */
+    /* right: 25%; */
+}

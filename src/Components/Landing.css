@@ -1,15 +1,23 @@
 .Landingdiv {
-    background-color: black;
+    /* background-color: black; */
     width: 100%;
     height: 100%;
-    background: linear-gradient(white, rgb(35, 110, 125));
+    background-color: aquamarine;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
+#carouseldiv {
+    width: 100%;
+    background: linear-gradient(rgba(57, 52, 52, 0.694), rgb(140, 207, 210));
+    background-color: rgba(6, 6, 6, 0.694);
+}
+
 .header {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,18 +33,28 @@
     position: relative;
     list-style: none;
 }
-.carouseldiv{
+
+.carouseldiv {
     justify-content: center;
-    
+
 }
+
 .logo {
     font-weight: 400;
     justify-self: flex-start;
     position: relative;
     font-size: 20px;
     padding: 05px;
-    color: rgb(255, 255, 255);
+    color: red, yellow;
 
+}
+
+.logo h1 {
+
+    font-size: 4.5vw;
+    background: -webkit-radial-gradient(rgb(185, 170, 170), rgb(44, 160, 31));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .logo:hover {
@@ -54,7 +72,9 @@
     padding: 05px 05px 05px 05px;
     margin: 05px 05px 05px 05px;
 }
-
+.Navbar ul li a{
+    font-size: 1em;
+}
 .Navbar a {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -70,24 +90,115 @@
     top: 20px;
 }
 
-#Content-col {
-    justify-content: flex-end;
-    align-content: center;
-}
-
 .imgTom {
     position: relative;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
+}
+
+.Row-one {
+    margin: 0px 0px 0px 0px;
+}
+
+#startwbtn {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid black;
+    border-radius: 45px;
+    width: max-content;
+    padding: 6px 08px 8px 08px;
+
+}
+
+#startwbtn a {
+    color: white;
+    text-decoration: none;
 }
 
 .imgTom img {
     align-items: center;
     position: relative;
-    width: 100vw;
-    max-width: 420px;
+    /* width: 100vw; */
+    max-width: 350px;
+    min-width: 250px;
     top: 20px;
 }
-.imgTom img :hover{
-    width: 110vw;
+
+.carImg {
+    height: 50vh;
+    width: auto;
+}
+
+.Row-one {
+    margin: 0px 10px 0px 10px;
+}
+
+#Content-col-one {
+    border-radius: 50px !important;
+    box-shadow: 05px 05px 25px 05px black !important;
+    min-width: 350px;
+    width: 45vw;
+    left: 05%;
+    margin: 30px 10px 30px 0px;
+    padding: 35px;
+    border: 2px solid rgba(107, 75, 75, 0.716);
+    height: max-content;
+    background: radial-gradient(rgb(121, 91, 41), rgb(110, 109, 108));
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.Row-two {
+    margin: 0px 10px 0px 10px;
+}
+
+#Content-col-two {
+    min-width: 350px;
+    width: 45vw;
+    margin: 30px 10px 30px 010px;
+    border-radius: 45px;
+    padding: 35px;
+    border: 2px solid rgba(107, 75, 75, 0.716);
+    height: max-content;
+    background: radial-gradient(rgb(121, 91, 41), rgb(110, 109, 108));
+    justify-content: flex-end;
+    align-content: center;
+    box-shadow: 05px 05px 25px 05px black !important;
+
+}
+
+.Row-three {
+    margin: 0px 10px 0px 10px;
+}
+
+#Content-col-three {
+    min-width: 350px;
+    width: 45vw;
+    margin: 30px 10px 30px 10px;
+    border-radius: 45px;
+    padding: 35px;
+    border: 2px solid rgba(107, 75, 75, 0.716);
+    height: max-content;
+    background: radial-gradient(rgb(121, 91, 41), rgb(110, 109, 108));
+    justify-content: flex-end;
+    align-content: center;
+    box-shadow: 05px 05px 25px 05px black !important;
+
+}
+
+.Row-four {
+    margin: 50px 0px 50px 0px !important;
+}
+
+#Content-col-four {
+    box-shadow: 05px 05px 25px 05px black !important;
+    min-width: 350px;
+    width: 45vw;
+    margin: 30px 10px 30px 10px;
+    border-radius: 45px;
+    padding: 35px;
+    border: 2px solid rgba(107, 75, 75, 0.716);
+    height: max-content;
+    background: radial-gradient(rgb(121, 91, 41), rgb(110, 109, 108));
+    justify-content: flex-end;
+    align-content: center;
 }
