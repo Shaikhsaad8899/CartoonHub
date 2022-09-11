@@ -7,13 +7,7 @@ import Oggy from "../assets/oggy.png";
 import Doraemon from "../assets/doraemon.png";
 import Scooby from "../assets/scooby.png";
 import Billi from "../assets/billi.png";
-import { FaBars, FaTimes } from "react-icons/fa";
 export const Landing = () => {
-  const navRef = useRef();
-
-  const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
-  };
   return (
     <React.Fragment>
       <body className="body min-h-screen">
@@ -22,14 +16,22 @@ export const Landing = () => {
             <div className="logo">
               <h1>Cartoon City</h1>
             </div>
-            <nav className="Navbar" ref={navRef}>
-              <a href="/Landing">Home</a>
-              <a href="/About">
-                More Cartoons
-              </a> <a href="/Careers">Careers</a>{" "}
-              <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-                <FaTimes />
-              </button>
+            <nav className="Navbar" >
+              <ul>
+                <li>
+                  {" "}
+                  <a href="/Landing">Home</a>{" "}
+                </li>
+                <li>
+                  {" "}
+                  <a href="/About">More Cartoons</a>{" "}
+                </li>
+
+                {/* <li>
+                  {" "}
+                  <a href="/Careers">Careers</a>{" "}
+                </li> */}
+              </ul>
             </nav>
           </div>
 
@@ -76,7 +78,7 @@ export const Landing = () => {
                           class="carImg d-block "
                           src={Billi}
                           alt="First slide"
-                        />
+                        /> 
                       </div>
                     </div>
                     <a
@@ -118,7 +120,7 @@ export const Landing = () => {
                     <h5>
                       Tom and Jerry is an American animated media franchise and
                       series of comedy short films created in 1940 by William
-                      Hanna and Joseph Barbera.{" "}
+                      Hanna and Joseph Barbera. {" "}
                     </h5>
                   </Row>
                   <Row>
@@ -146,9 +148,7 @@ export const Landing = () => {
                   </Row>
                   <Row>
                     <h5>
-                      The ill-tempered Grim Reaper gets into a wager that forces
-                      him to become the life-long companions of two scheming
-                      youngsters after he loses.{" "}
+                    The ill-tempered Grim Reaper gets into a wager that forces him to become the life-long companions of two scheming youngsters after he loses. {" "}
                     </h5>
                   </Row>
                   <Row>
@@ -169,9 +169,7 @@ export const Landing = () => {
                   </Row>
                   <Row>
                     <h5>
-                      Scooby-Doo is the eponymous character and protagonist of
-                      the animated television franchise of the same name,
-                      created in 1969 by the American animation{" "}
+                    Scooby-Doo is the eponymous character and protagonist of the animated television franchise of the same name, created in 1969 by the American animation{" "}
                     </h5>
                   </Row>
                   <Row>
