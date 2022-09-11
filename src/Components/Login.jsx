@@ -4,23 +4,23 @@ import validator from "validator";
 import { useNavigate } from "react-router-dom";
 import "../Components/Login.css";
 export const Login = () => {
-  //   const [emailError, setEmailError] = useState(handleEmailChange);
-  //   const validateEmail = (e) => {
-  //     var email = e.target.value;
+    const [emailError, setEmailError] = useState();
+    const validateEmail = (e) => {
+      var email = e.target.value;
 
-  //     if (validator.isEmail(email)) {
-  //       setEmailError("");
-  //     } else {
-  //       setEmailError("Enter valid Email!");
-  //     }
-  //   };
+      if (validator.isEmail(email)) {
+        setEmailError("");
+      } else {
+        setEmailError("Enter valid Email!");
+      }
+    };
 
   const [emailInput, setEmailInput] = useState("");
   const [passwordInput, setPasswordInput] = useState("");
   const navigate = useNavigate();
-  const handleEmailChange = (e) => {
-    setEmailInput(e.target.value);
-  };
+  // const handleEmailChange = (e) => {
+  //   setEmailInput(e.target.value);
+  // };
   const handlePasswordChange = (e) => {
     setPasswordInput(e.target.value);
   };
@@ -32,7 +32,7 @@ export const Login = () => {
       password: "passss",
     };
     if (
-      emailInput === hardcodedCred.email &&
+      emailInput === hardcodedCred.email ||
       passwordInput === hardcodedCred.password
     ) {
       navigate("/Landing");
@@ -57,12 +57,13 @@ export const Login = () => {
               id="emails"
               aria-describedby="emailHelp"
               placeholder="Enter email"
-              value={emailInput}
-              onChange={handleEmailChange}
+              // value={emailInput}
+              // onChange={handleEmailChange}
+              onChange={validateEmail}
             />
 
             <br />
-            {/* <span
+            <span
               style={{
                 fontWeight: "600",
                 fontSize: "12px",
@@ -70,7 +71,7 @@ export const Login = () => {
               }}
             >
               {emailError}
-            </span> */}
+            </span>
           </div>
           <div className="mb-3">
             <label id="sign-in-labels">Password</label>
