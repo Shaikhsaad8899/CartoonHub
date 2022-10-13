@@ -3,7 +3,6 @@ import {Routes,Route } from 'react-router-dom';
 import { Login } from "./Components/Login";
 import { Landing } from './Components/Landing';
 import { About } from './Components/About';
-import { Careers } from './Components/Careers';
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
         <Route path='/' element={<Login/>}></Route>
         <Route path='/Landing' element={<Landing/>}></Route>
         <Route path='/About' element={<About/>}></Route>
-        <Route path='/Careers' element={<Careers/>}></Route>
       </Routes>
       </>
     </div>

@@ -111,7 +111,7 @@ export const Landing = () => {
               <Row className="Row-one d-flex justify-content-evenly ">
                 <Col id="Content-col-one" md="6">
                   <Row>
-                    <h4>Metro Doraemon Mayer</h4>
+                    <h4>Metro Goldwyn Mayer</h4>
                   </Row>
                   <Row>
                     <h5>TOM AND JERRY</h5>

@@ -25,12 +25,7 @@ export const About = () => {
               {" "}
               <a href="/About">More Cartoons</a>{" "}
             </li>
-
-            {/* <li>
-              {" "}
-              <a href="/Careers">Careers</a>{" "}
-            </li> */}
-          </ul>
+          </ul> 
         </nav>
       </div>
       <div className="aboutdiv">
